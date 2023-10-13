@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* variables */
+:root {
+  --cic-color: #004d70;
+  --cic-color-light: #006999;
+  --neutral-color: #d7d7d7;
+  --navbar-height: auto;
+}
+
+.button {
+  /* background-color: var(--cic-color-light); */
+  color: var(--neutral-color);
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.button:hover {
+  background-color: var(--neutral-color);
+  color: var(--cic-color-light);
+  scale: 1.2;
+}
+
+#navbar {
+  background-color: var(--cic-color);
+  color: var(--neutral-color);
+  padding: 10px;
+  width: 100vw;
+  height: var(--navbar-height);
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); */
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}
+
+.navbar-logo {
+  width: 25vw;
+  color: var(--neutral-color);
+  font-size: 2rem;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.divider {
+  height: 100%;
+  width: 1px;
+  background-color: var(--neutral-color);
+  z-index: 1001;
+}
+
+/* .nav-link {
+  color: var(--neutral-color);
+  text-decoration-style: none;
+  text-decoration: none;
+  margin: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+} */
+
+/* .nav-link:hover {
+  background-color: var(--neutral-color);
+  color: var(--cic-color);
+  scale: 1.2;
+} */
+
+/* #main-container {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* #main-workspace {
+  padding: 20px;
+} */
+
+/* h2 #sidebar {
+  font-size: small;
+  color: var(--neutral-color);
+  font-weight: 100;
+}
+
+#sidebar {
+  background-color: var(--cic-color);
+  color: var(--neutral-color);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed; 
+  top: var(--navbar-height);
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+} */
